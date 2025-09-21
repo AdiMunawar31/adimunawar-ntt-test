@@ -15,13 +15,6 @@ const PopularStocksPage = Loadable(
   lazy(() => import("../views/dashboard/popularStocks"))
 );
 
-// utilities routing
-const UtilsTypography = Loadable(
-  lazy(() => import("../views/utilities/Typography"))
-);
-const UtilsColor = Loadable(lazy(() => import("../views/utilities/Color")));
-const UtilsShadow = Loadable(lazy(() => import("../views/utilities/Shadow")));
-
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
@@ -76,18 +69,6 @@ const MainRoutes = {
           element: <PopularStocksPage />,
         },
       ],
-    },
-    {
-      path: "typography",
-      element: <UtilsTypography />,
-    },
-    {
-      path: "color",
-      element: <UtilsColor />,
-    },
-    {
-      path: "shadow",
-      element: <UtilsShadow />,
     },
   ],
 };
