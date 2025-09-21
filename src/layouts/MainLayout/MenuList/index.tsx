@@ -15,7 +15,7 @@ function MenuList() {
   const { menuMaster } = useGetMenuMaster();
   const drawerOpen = menuMaster.isDashboardDrawerOpened;
 
-  const [selectedID, setSelectedID] = useState("");
+  const [, setSelectedID] = useState("");
 
   const lastItem = null;
 
